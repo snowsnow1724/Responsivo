@@ -3,94 +3,113 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Yomi Yomi | Pastelería Artesanal</title>
+    <title>Yomi Yomi | Pastelería </title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
     <link href="https://fonts.googleapis.com/css2?family=Quicksand:wght@400;700&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="style.css">
 </head>
-<body>
+<body class="p-3">
 
-    <header class="main-header">
+    <header class="main-header d-flex justify-content-between align-items-center px-3 px-md-5 py-3 mb-3">
         <div class="logo-contenedor">
-            <img src="logo.png" alt="Logo">
+            <img src="logo.png" alt="Logo Izquierdo">
         </div>
-
-        <h1>YOMI YOMI</h1>
-
+        <h1 class="m-0 text-center">YOMI YOMI</h1>
         <div class="logo-contenedor">
-            <img src="logo.png" alt="Logo">
+            <img src="logo.png" alt="Logo Derecho">
         </div>
     </header>
 
-    <main class="products-section">
-        <h2 class="section-title">Nuestros Productos</h2>
-        <div class="products-grid">
+    <main class="products-section p-4 mb-3">
+        <h2 class="section-title mb-4">Nuestros Productos</h2>
+        
+        <div class="row row-cols-1 row-cols-sm-2 row-cols-lg-5 g-4 justify-content-center">
             
-            <div class="product-card">
-                <div class="img-container">
-                    <img src="pastel-fresa.png" alt="Pastel">
-                </div>
-                <div class="product-info">
-                    <p class="p-name">Pastel de Fresa</p>
-                    <p class="p-price">$250</p>
-                    <p class="p-desc">Delicioso y fresco</p>
-                </div>
-            </div>
-
-            <div class="product-card">
-                <div class="img-container">
-                    <img src="cupcake.png" alt="Cupcake">
-                </div>
-                <div class="product-info">
-                    <p class="p-name">Cupcakes</p>
-                    <p class="p-price">$35</p>
-                    <p class="p-desc">Suave textura</p>
+            <div class="col">
+                <div class="product-card h-100">
+                    <div class="img-container">
+                        <img src="pastel-fresa.png" alt="Pastel de Fresa">
+                    </div>
+                    <div class="product-info mt-2">
+                        <p class="p-name">Pastel de Fresa</p>
+                        <p class="p-price">$250</p>
+                        <p class="p-desc">Delicioso y fresco</p>
+                    </div>
                 </div>
             </div>
 
-            <div class="product-card">
-                <div class="img-container">
-                    <img src="cheesecake.png" alt="Cheesecake">
-                </div>
-                <div class="product-info">
-                    <p class="p-name">Cheesecake</p>
-                    <p class="p-price">$180</p>
-                    <p class="p-desc">Receta clásica</p>
-                </div>
-            </div>
-
-            <div class="product-card">
-                <div class="img-container">
-                    <img src="galletas.png" alt="Galletas">
-                </div>
-                <div class="product-info">
-                    <p class="p-name">Galletas</p>
-                    <p class="p-price">$15</p>
-                    <p class="p-desc">Recién horneadas</p>
+            <div class="col">
+                <div class="product-card h-100">
+                    <div class="img-container">
+                        <img src="cupcake.png" alt="Cupcake Vainilla">
+                    </div>
+                    <div class="product-info mt-2">
+                        <p class="p-name">Cupcake Vainilla</p>
+                        <p class="p-price">$35</p>
+                        <p class="p-desc">Suave textura</p>
+                    </div>
                 </div>
             </div>
 
-            <div class="product-card">
-                <div class="img-container">
-                    <img src="tarta.png" alt="Tarta">
+            <div class="col">
+                <div class="product-card h-100">
+                    <div class="img-container">
+                        <img src="cheesecake.png" alt="Cheesecake">
+                    </div>
+                    <div class="product-info mt-2">
+                        <p class="p-name">Cheesecake</p>
+                        <p class="p-price">$180</p>
+                        <p class="p-desc">Receta clásica</p>
+                    </div>
                 </div>
-                <div class="product-info">
-                    <p class="p-name">Tarta Frutal</p>
-                    <p class="p-price">$210</p>
-                    <p class="p-desc">Fruta de estación</p>
+            </div>
+
+            <div class="col">
+                <div class="product-card h-100">
+                    <div class="img-container">
+                        <img src="galletas.png" alt="Galletas Choco">
+                    </div>
+                    <div class="product-info mt-2">
+                        <p class="p-name">Galletas Choco</p>
+                        <p class="p-price">$15</p>
+                        <p class="p-desc">Recién horneadas</p>
+                    </div>
+                </div>
+            </div>
+
+            <div class="col">
+                <div class="product-card h-100">
+                    <div class="img-container">
+                        <img src="tarta.png" alt="Tarta Frutal">
+                    </div>
+                    <div class="product-info mt-2">
+                        <p class="p-name">Tarta Frutal</p>
+                        <p class="p-price">$210</p>
+                        <p class="p-desc">Fruta de estación</p>
+                    </div>
                 </div>
             </div>
 
         </div>
     </main>
 
-    <section class="contact-bars">
-        <div class="info-bar msg">Somos un negocio local dedicado a brindar delicias a tu paladar</div>
-        <div class="info-bar contact">yomiyomi@gmail.com | 33-XXXX-XXXX</div>
-    </section>
+    <div class="row g-2 mb-2">
+        <div class="col-12 col-md-8">
+            <div class="info-bar h-100 d-flex align-items-center justify-content-center px-3">
+                Somos un negocio local dedicado a brindar delicias a tu paladar!!!
+            </div>
+        </div>
+        <div class="col-12 col-md-4">
+            <div class="info-bar h-100 d-flex align-items-center justify-content-center px-3">
+                yomiyomi@gmail.com | 33-XXXX-XXXX
+            </div>
+        </div>
+    </div>
 
-    <footer class="bottom-footer">
+    <footer class="bottom-footer py-2 text-center">
         A partir de 2026 para ti
     </footer>
 
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
 </body>
 </html>
