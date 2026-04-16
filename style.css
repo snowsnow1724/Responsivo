@@ -6,16 +6,15 @@
 
 body {
     font-family: 'Quicksand', sans-serif;
-    background-color: #fffdf2; /* Amarillo crema */
+    background-color: #fffdf2;
     height: 100vh;
     display: flex;
     flex-direction: column;
     padding: 15px;
-    overflow: hidden; /* Evita el scroll */
 }
 
 .main-header {
-    background-color: #b3e5fc; /* Azul pastel */
+    background-color: #b3e5fc;
     flex: 0 0 12%;
     display: flex;
     justify-content: space-between;
@@ -24,7 +23,10 @@ body {
     border-radius: 20px;
 }
 
-/* Contenedor del logo del encabezado */
+#logo{
+    width: 1000px;
+    height: 100%;
+}
 .logo-contenedor {
     background-color: white;
     width: 70px;
@@ -37,18 +39,18 @@ body {
 .logo-contenedor img {
     width: 100%;
     height: 100%;
-    object-fit: contain; /* Para que el logo se vea completo */
+    object-fit: contain;
 }
 
 h1 {
-    color: #6a1b9a; /* Morado */
+    color: #6a1b9a;
     letter-spacing: 6px;
     font-weight: 700;
 }
 
-/* --- Sección de Productos --- */
+
 .products-section {
-    background-color: #ffdae9; /* Rosa pastel */
+    background-color: #ffdae9;
     flex: 1;
     margin: 10px 0;
     border-radius: 30px;
@@ -58,9 +60,9 @@ h1 {
 }
 
 .section-title {
-    color: white;
+    color: #6a1b9a;
     font-size: 1.8rem;
-    margin-bottom: 10px;
+    margin-bottom: 30px;
 }
 
 .products-grid {
@@ -71,14 +73,14 @@ h1 {
 
 .product-card {
     width: 18%;
+
     display: flex;
     flex-direction: column;
 }
 
 /* Contenedor de la foto del pastel */
 .img-container {
-    background-color: #4fc3f7; /* Azul de la tarjeta */
-    height: 140px; /* Altura fija para que no crezca */
+    height: 200px; /* Altura fija para que no crezca */
     border-radius: 20px; 
     border: 4px solid #444; /* Borde oscuro como tu diseño */
     overflow: hidden; /* Corta la foto para que no salga del cuadro */
@@ -87,7 +89,7 @@ h1 {
 .img-container img {
     width: 100%;
     height: 100%;
-    object-fit: cover; /* Ajusta la foto al cuadro automáticamente */
+    object-fit: cover; 
 }
 
 .product-info {
@@ -95,11 +97,11 @@ h1 {
     padding-top: 10px;
 }
 
-.p-name { font-weight: 700; color: white; margin-bottom: 2px; }
-.p-price { color: #6a1b9a; font-weight: bold; }
-.p-desc { font-size: 0.8rem; color: #0277bd; }
+.p-name { font-weight: 700; color: #6a1b9a; margin-bottom: 2px; }
+.p-price { color: #D81D61; font-weight: bold; }
+.p-desc { font-size: 0.8rem; color: #585858; }
 
-/* --- Barras inferiores --- */
+
 .contact-bars {
     display: flex;
     gap: 15px;
@@ -115,12 +117,12 @@ h1 {
     font-weight: 600;
 }
 
-.msg { flex: 2; text-align: left; }
-.contact { flex: 1.5; text-align: right; }
+.msg { flex: 2; text-align: center; }
+.contact { flex: 1.5; text-align: center; }
 
 .bottom-footer {
-    background-color: #b3e5fc;
-    color: #6a1b9a;
+    background-color: #6a1b9a;
+    color: #ffffff;
     text-align: center;
     padding: 8px;
     border-radius: 10px;
